@@ -51,6 +51,7 @@ class HangpersonApp < Sinatra::Base
       end
     else
       flash[:message] = "You have already used that letter"
+      redirect '/show'
     end
   end
   
